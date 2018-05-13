@@ -1,0 +1,11 @@
+version: "2"
+services:
+  nodejs:
+    build: ./nodejs/
+    ports:
+    - "53:53/udp"
+    restart: always
+    volumes:
+    - "./data:/data"
+    command: "npm start"
+

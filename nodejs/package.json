@@ -1,0 +1,18 @@
+{
+  "version": "0.0.1",
+  "name": "director",
+  "description": "director",
+  "repository": "ziyan/director",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "dnsd": "latest"
+  },
+  "engines": {
+    "node": "latest",
+    "npm": "latest"
+  },
+  "scripts": {
+    "start": "node director.js"
+  }
+}
