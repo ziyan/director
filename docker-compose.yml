@@ -6,6 +6,6 @@ services:
     - "53:53/udp"
     restart: always
     volumes:
-    - "./data:/data"
+    - "./data:/data:ro"
     command: "npm start"
 
