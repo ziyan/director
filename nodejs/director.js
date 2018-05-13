@@ -51,10 +51,10 @@ const handler = (request, response) => {
   const question = request.question[0]
   const fqdn = question.name.toLowerCase()
   const answer = (data) => {
-    console.log(`${request.connection.remoteAddress}: ${question.name} ${question.class} ${question.type}: ${data}`)
+    console.log(`${request.connection.remoteAddress}: ${fqdn} ${question.class} ${question.type}: ${data}`)
     if (data) {
       response.answer.push({
-        name: question.name,
+        name: fqdn,
         class: question.class,
         type: question.type,
         data: data,
