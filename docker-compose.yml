@@ -7,5 +7,5 @@ services:
     restart: always
     volumes:
     - "./data:/data:ro"
-    command: "npm start"
+    command: "node director.js"
 
